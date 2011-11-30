@@ -1,0 +1,20 @@
+cs:
+  customer_title: Zákazník
+  label_customer: Zákazník
+  label_customer_plural: Přehled zákazníků
+  label_customer_information: Informace o zákazníkovi
+  label_customer_edit_information: Úprava informací o zákazníkovi
+  label_customer_assign_to_project: Přiřazení zákazníka k projektu
+  label_customer_view: Pohled
+  label_customer_assign: Přiřadit
+  label_customer_list: Přehled
+  label_customer_new: Nový
+  field_customer_name: Jméno
+  field_customer_company: Společnost
+  field_customer_address: Adresa
+  field_customer_phone: Telefon
+  field_customer_email: Email
+  field_customer_website: Web
+  field_customer_skype: Skype
+  notice_successful_save: Uloženo
+  notice_unsuccessful_save: Nebylo uloženo
