@@ -4,11 +4,11 @@ class CustomersController < ApplicationController
   before_filter :find_project, :authorize
   before_filter :find_customer, :only => [:edit, :update, :destroy]
   before_filter :find_customers, :only => [:list, :select]
- 
+
   def show
     @customer = Customer.find_by_id(@project.customer_id)
   end
-  
+
   def list
     #@customers = Customer.find(:all)
   end
@@ -16,7 +16,7 @@ class CustomersController < ApplicationController
   def select
     #@customers = Customer.find(:all)
   end
-  
+
   def assign
     @project.customer_id = params[:customer][:id]
     if @project.save
@@ -27,7 +27,7 @@ class CustomersController < ApplicationController
       redirect_to :action => "select", :id => params[:id]
     end
   end
-    
+
   def edit
     #@customer = Customer.find_by_id(params[:customer_id])
   end
@@ -51,7 +51,7 @@ class CustomersController < ApplicationController
     end
     redirect_to :action => "list", :id => params[:id]
   end
-  
+
   def new
     @customer = Customer.new
   end
@@ -65,11 +65,11 @@ class CustomersController < ApplicationController
       render :action => "new", :id => params[:id]
     end
   end
-  
+
   private
-  
+
   def find_project
-    @project = Project.find(params[:id])
+    @project = Project.find_by_identifier(params[:id])
   rescue ActiveRecord::RecordNotFound
     render_404
   end
@@ -79,7 +79,7 @@ class CustomersController < ApplicationController
   rescue ActiveRecord::RecordNotFound
     render_404
   end
-  
+
   def find_customers
     @customers = Customer.find(:all) || []
   end

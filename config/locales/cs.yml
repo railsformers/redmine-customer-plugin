@@ -1,4 +1,5 @@
 cs:
+  project_module_customer_module: Zákazník
   customer_title: Zákazník
   label_customer: Zákazník
   label_customer_plural: Přehled zákazníků
