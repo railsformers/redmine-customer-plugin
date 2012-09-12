@@ -19,3 +19,7 @@ cs:
   field_customer_skype: Skype
   notice_successful_save: Uloženo
   notice_unsuccessful_save: Nebylo uloženo
+  permission_view_customer: Zobrazit zákazníka
+  permission_assign_customer: Přiřadit zákazníka
+  permission_see_customer_list: Zobrazit seznam zákazníků
+  permission_edit_customer: Upravit zákazníka
